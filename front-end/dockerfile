@@ -1,0 +1,13 @@
+FROM node
+
+RUN mkdir -p /usr/local/src/front-end
+WORKDIR /usr/local/src/front-end
+
+COPY package.json /usr/local/src/front-end
+RUN npm install
+
+COPY . /usr/local/src/front-end
+
+EXPOSE 4200
+
+CMD ["npm", "start"]
