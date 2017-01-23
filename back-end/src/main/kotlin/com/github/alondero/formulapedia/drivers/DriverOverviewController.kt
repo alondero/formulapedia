@@ -5,5 +5,10 @@ import org.springframework.web.bind.annotation.RestController
 class DriverOverviewController {
 
     @RequestMapping("/drivers")
-    fun drivers(): String = "Hello World!"
+    fun drivers() = listOf(
+            Driver("Lewis Hamilton", "British"),
+            Driver("Valtteri Bottas", "Finnish")
+    )
 }
+
+data class Driver (val name: String, val nationality: String)
