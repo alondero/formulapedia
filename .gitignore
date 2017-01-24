@@ -1,12 +1,3 @@
-# Ignore Visual Studio  Project #
-###################
-*.user
-*.gpState
-*.suo
-bin
-obj
-/packages
-
 # Ignore Node & Bower
 ###################
 node_modules
@@ -15,6 +6,11 @@ build
 .tmp
 src/**/*.map
 src/**/*.js
+
+# Ignore Gradle
+# #################
+.gradle
+.idea
 
 # Ignore Test reporters
 ###################

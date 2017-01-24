@@ -1,0 +1,4 @@
+FROM openjdk:alpine
+COPY build/libs /usr/local/formulapedia-back-end
+WORKDIR /usr/local/formulapedia-back-end
+CMD ["java", "-jar", "back-end-1.0.0-SNAPSHOT.jar"]
