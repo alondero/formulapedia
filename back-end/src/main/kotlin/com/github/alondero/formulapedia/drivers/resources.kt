@@ -7,5 +7,10 @@ import javax.ws.rs.Path
 class DriverResource {
 
     @GET
-    fun drivers() = "Hello World!"
+    fun drivers() = listOf(
+            Driver("Lewis Hamilton", "British"),
+            Driver("Valtteri Bottas", "Finnish")
+    )
 }
+
+data class Driver (val name: String, val nationality: String)
