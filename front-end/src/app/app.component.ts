@@ -12,7 +12,7 @@ export class AppComponent {
   drivers: string;
 
   constructor(private http: Http) {
-     this.http.get('http://localhost:8080/drivers').subscribe(
+     this.http.get('http://192.168.99.100:8080/drivers').subscribe(
        res => this.drivers = JSON.stringify(res.json()),
        error => console.log(error)
      );
